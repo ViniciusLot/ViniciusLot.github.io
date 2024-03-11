@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipe IEV</title>
+</head>
+<body>
+<script>
+function redirecionarParaAgendaAleatoriamente() {
+    // Array contendo os links das agendas dos executivos
+    var agendas = [
+        'https://calendar.app.google/mnQ7Tc7C6shSYKjW7',
+       'https://calendar.app.google/UMU7qjxAb7x3Bv9u8',
+        'https://calendar.app.google/qhJoN8hjczPCcViS8'
+    ];
+
+    // Gerar um número aleatório entre 0 e 2 para escolher aleatoriamente um dos links
+    var indiceAleatorio = Math.floor(Math.random() * agendas.length);
+
+    // Redirecionar para o link escolhido aleatoriamente
+    window.location.href = agendas[indiceAleatorio];
+}
+
+// Chamar a função de redirecionamento assim que a página for carregada
+redirecionarParaAgendaAleatoriamente();
+</script>
+</body>
+</html>
